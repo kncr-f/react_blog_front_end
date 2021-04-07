@@ -1,16 +1,12 @@
 import React,{useEffect,useState} from 'react';
-//import { api } from '../api';
 import { withRouter } from "react-router-dom";
 import { api } from '../api';
 
 const EditComment = (props) => {
-//const {comments}=
+
   
     const [comment, setComment]=useState({display_name:"",body:""});
-    //const { id } = props.match.params;
-
-    //const comments=[props.comments];
-    //console.log('editcommnet :',props);
+   
 
     const onInputChange = (e) => {
         setComment({ ...comment, [e.target.name]: e.target.value })
@@ -42,17 +38,9 @@ const EditComment = (props) => {
         })
     }
 
-    // useEffect(()=>{
-
-    //     api()
-    //     .put(`/posts/${props.match.params.post_id}/comments/${props.match.params.id}`,)
-    //     .then(response=>{
-    // console.log(response.data);
-
-    // // // //     });
-    //  },[])
+   
     
-{/*<Route exact path="/post/:id" render={({match}) => (<Post post={posts.find(p => p.id === match.params.id)} />)} />*/}
+
 
     return (
         <React.Fragment>

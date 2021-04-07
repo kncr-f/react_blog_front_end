@@ -1,0 +1,1 @@
+ Post-list and Post-details components are created. Using react-router-dom and axios, informations is obtained from Api.
